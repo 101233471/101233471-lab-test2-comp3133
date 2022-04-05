@@ -1,7 +1,29 @@
 <style>
+  .nav{
+    width: 100%;
+  background-color: lightseagreen;
+  overflow: auto;
+  }
+  a{
+    float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+  }
+  .nav a:hover {
+  background-color: #000;
+}
 </style>
 
 <h1>Lab Test 2</h1>
+
+<nav class="nav">
+  <a routerLink="/missionlist" routerLinkActive = "active">Mission List</a>
+  <a routerLink = "/missiondetails" routerLinkActive = "active">Mission Details</a>
+</nav>
 
 
 <router-outlet></router-outlet>

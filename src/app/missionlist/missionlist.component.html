@@ -1,6 +1,14 @@
-<p>missionlist works!</p>
+<style>
+    .list{
+        list-style-type: none;
+        background-color: aquamarine;
+        padding: 2px;
+    }
+</style>
 
-<ul>
+<h3>Mission List</h3>
+
+<ul class="list">
     <li *ngFor="let item of data">
         {{item.mission_name}},
         {{item.launch_year}},
