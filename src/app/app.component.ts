@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '101233471-lab-test2-comp3133';
+  
 }

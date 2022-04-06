@@ -8,6 +8,9 @@ import { PostsService } from '../posts.service';
 })
 export class MissionlistComponent implements OnInit {
   data:any;
+  @Input() item = 'mission_id';
+  currentItem = 'mission_id';
+
   constructor(private postData:PostsService) { }
 
   ngOnInit(): void {
